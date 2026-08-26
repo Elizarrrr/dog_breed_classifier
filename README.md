@@ -8,7 +8,7 @@ program on Udacity. Uses pretrained CNN models to classify pet images and identi
 - Classifies the breed of dog for dog images
 - Compares performance across three CNN architectures
 
-## Results (pet_images dataset — 40 images)
+## Results (pet_images dataset)
 
 | Model   | % Dogs Correct | % Breeds Correct | % Not-Dog Correct | % Match |
 |---------|---------------|-----------------|------------------|---------|
@@ -16,7 +16,7 @@ program on Udacity. Uses pretrained CNN models to classify pet images and identi
 | AlexNet | 100.0%        | 80.0%           | 100.0%           | 75.0%   |
 | VGG     | 100.0%        | 93.3%           | 100.0%           | 87.5%   |
 
-**Best Model: VGG** — highest breed accuracy (93.3%) with 100% dog/not-dog identification accuracy.
+**Best Model: VGG** — achieved the highest breed classification accuracy (93.3%) while correctly identifying 100% of dog and non-dog images.
 
 ## How to Run
 
