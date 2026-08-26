@@ -1,8 +1,7 @@
 # Dog Breed Image Classifier
 
-A Python project built as part of the AWS AI Practitioner Nanodegree 
-on Udacity. Uses pretrained CNN models to classify pet images and 
-identify dog breeds.
+A Python project built as part of the **AWS AI & ML Scholars – Future AWS AI Programmer** 
+program on Udacity. Uses pretrained CNN models to classify pet images and identify dog breeds.
 
 ## What It Does
 - Identifies which images are dogs and which are not
@@ -17,26 +16,33 @@ identify dog breeds.
 | AlexNet | 100.0%        | 80.0%           | 100.0%           | 75.0%   |
 | VGG     | 100.0%        | 93.3%           | 100.0%           | 87.5%   |
 
-**Best Model: VGG** — highest breed accuracy (93.3%) with 100% 
-dog/not-dog identification accuracy.
+**Best Model: VGG** — highest breed accuracy (93.3%) with 100% dog/not-dog identification accuracy.
 
 ## How to Run
 
 ### 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/dog_classifier.git
-cd dog_classifier
+```bash
+git clone https://github.com/YOUR_USERNAME/dog_breed_classifier.git
+cd dog_breed_classifier
+```
 
 ### 2. Create and activate virtual environment
+```bash
 python -m venv .venv
 source .venv/Scripts/activate  # Windows
-source .venv/bin/activate       # Mac/Linux
+source .venv/bin/activate      # Mac/Linux
+```
 
 ### 3. Install dependencies
+```bash
 pip install Pillow torch torchvision
+```
 
 ### 4. Add your own pet_images folder, then run
+```bash
 cd data
 python check_images.py --dir pet_images/ --arch vgg --dogfile dognames.txt
+```
 
 ## Files
 - `check_images.py` — main program
