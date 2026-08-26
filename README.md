@@ -29,7 +29,7 @@ cd dog_breed_classifier
 ### 2. Create and activate virtual environment
 ```bash
 python -m venv .venv
-source .venv/Scripts/activate  # Windows
+source .venv/Scripts/activate  # Git Bash on Windows
 source .venv/bin/activate      # Mac/Linux
 ```
 
