@@ -1,0 +1,49 @@
+Questions regarding Uploaded Image Classification:
+
+1. Did the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed? If not, report the differences in the classifications.
+
+Answer: 
+
+Yes. All three model architectures (ResNet, AlexNet, and VGG) classified Dog_01.jpg as "pembroke, pembroke welsh corgi, corgi" (Pembroke Welsh Corgi).
+
+2. Did each of the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed of dog as that model architecture classified Dog_02.jpg? If not, report the differences in the classifications.
+
+Answer: 
+
+Yes. All three models classified both Dog_01.jpg and Dog_02.jpg as "pembroke, pembroke welsh corgi, corgi" (Pembroke Welsh Corgi), regardless of the image flip.
+
+3. Did the three model architectures correctly classify Animal_Name_01.jpg and Object_Name_01.jpg to not be dogs? If not, report the misclassifications.
+
+Answer: 
+
+Yes. All three models correctly classified Rabbit_01.jpg as "wood rabbit, cottontail, cottontail rabbit, rabbit" and Car_01.jpg as "sports car, sport car". Both were correctly identified as NOT dogs.
+
+4. Based upon your answers for questions 1. - 3. above, select the model architecture that you feel did the best at classifying the four uploaded images. Describe why you selected that model architecture as the best on uploaded image classification.
+
+Answer:
+
+All three models performed equally well on the four uploaded images. Each correctly identified both dog images as dogs, both non-dog images as not dogs, and consistently classified the dogs as Pembroke Welsh Corgi.
+Since there was no difference in performance among ResNet, AlexNet, and VGG on this specific set of images, all three are considered equally effective for this classification task.
+
+
+Final Results Table
+
+Dataset Summary
+# Total Images	40
+# Dog Images	30
+# Not-a-Dog Images	10
+
+Model Performance
+CNN Model Architecture	% Not-a-Dog Correct	% Dogs Correct	% Breeds Correct	% Match Labels
+ResNet	                90.0%	            100.0%	        90.0%	            82.5%
+AlexNet	                100.0%	            100.0%	        80.0%	            75.0%
+VGG	                    100.0%	            100.0%	        93.3%	            87.5%
+
+Project Results Summary
+Objective 1 — Identifying dogs vs non-dogs:
+Both VGG and AlexNet correctly identified dog and non-dog images 100% of the time. ResNet fell slightly short, misclassifying cat_01.jpg as a dog (Norwegian Elkhound), giving it 90% on non-dog accuracy.
+
+Objective 2 — Classifying dog breeds:
+VGG performed best with 93.3% breed accuracy, misclassifying only 2 breeds — Great Pyrenees (identified as Kuvasz) and Beagle (identified as Walker Hound). These are visually similar breeds, which explains the confusion.
+
+Best Model: VGG — it was the only model that achieved 100% accuracy on both dog/not-dog identification AND delivered the highest breed accuracy at 93.3%.
