@@ -22,7 +22,7 @@ program on Udacity. Uses pretrained CNN models to classify pet images and identi
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/dog_breed_classifier.git
+git clone https://github.com/Elizarrrr/dog_breed_classifier.git
 cd dog_breed_classifier
 ```
 
